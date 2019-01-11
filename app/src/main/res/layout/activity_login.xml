@@ -61,11 +61,11 @@
             app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-                android:id="@+id/loginTxt"
+                android:id="@+id/loginLogin"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="loginLogin"
+                android:inputType="text"
                 android:text="Login"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="54dp"/>
