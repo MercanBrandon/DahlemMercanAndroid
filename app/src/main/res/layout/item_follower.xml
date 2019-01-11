@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:weightSum="100">
+              android:layout_height="wrap_content">
 
-    <ImageView android:layout_width="0dp"
-               android:layout_weight="25"
-               android:layout_height="wrap_content" />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:src="@mipmap/ic_launcher" />
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_weight="75"
-            android:layout_height="match_parent">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_name"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_url_user"/>
-    </LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_name" tools:text="BrandonMercan"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_url_user" tools:text="https://github.com/MercanBrandon"/>
 </LinearLayout>
