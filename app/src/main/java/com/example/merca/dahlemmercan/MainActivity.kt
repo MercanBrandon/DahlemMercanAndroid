@@ -1,5 +1,6 @@
 package com.example.merca.dahlemmercan
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
@@ -8,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.chibatching.kotpref.Kotpref
 import com.example.merca.dahlemmercan.fragment.FollowersFragment
 import com.example.merca.dahlemmercan.fragment.PreloaderFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -56,11 +58,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.menuButton1 -> {
+            R.id.menuFollower -> {
                 replaceFragment(FollowersFragment())
             }
-            R.id.menuButton2 -> {
+            R.id.menuPreloader -> {
                 replaceFragment(PreloaderFragment())
+            }
+            R.id.menuDeconnexion -> {
+                Kotpref.init(context = applicationContext)
+                Preferences.clear()
+                val intent: Intent = Intent(applicationContext, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
 

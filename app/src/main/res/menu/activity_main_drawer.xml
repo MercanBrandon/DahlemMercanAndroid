@@ -7,13 +7,17 @@
     <item android:title="Followers de GitHub">
         <menu>
             <item
-                    android:id="@+id/menuButton1"
+                    android:id="@+id/menuFollower"
                     android:icon="@drawable/ic_followers"
-                    android:title="Share"/>
+                    android:title="@string/followers"/>
             <item
-                    android:id="@+id/menuButton2"
+                    android:id="@+id/menuPreloader"
                     android:icon="@drawable/ic_preloader"
-                    android:title="Send"/>
+                    android:title="@string/preloader"/>
+            <item
+                    android:id="@+id/menuDeconnexion"
+                    android:icon="@drawable/ic_deconnexion"
+                    android:title="@string/disconnect"/>
         </menu>
     </item>
 

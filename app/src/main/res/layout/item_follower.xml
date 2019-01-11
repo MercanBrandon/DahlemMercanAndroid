@@ -2,13 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+              android:layout_height="wrap_content" android:background="#d6d6d6"
+              android:layout_margin="10sp">
 
     <ImageView android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                tools:src="@mipmap/ic_launcher" />
 
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_name" tools:text="BrandonMercan"/>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txt_url_user" tools:text="https://github.com/MercanBrandon"/>
+    <TextView
+            android:text="Login :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/followerLogin"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:id="@+id/txt_name"
+              tools:text="BrandonMercan"
+              android:textColor="@color/colorBlack"/>
+
+    <TextView
+            android:text="URL :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/followerTextViewUrl"/>
+    <TextView android:layout_width="match_parent"
+              android:textSize="20sp" android:layout_height="wrap_content" android:id="@+id/txt_url_user" tools:text="https://github.com/MercanBrandon"
+              android:textColor="@color/colorBlack"/>
 </LinearLayout>

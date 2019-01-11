@@ -8,4 +8,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="ListFollowers">La liste des followers</string>
+    <string name="disconnect">Déconnexion</string>
+    <string name="followers">Vos followers</string>
+    <string name="preloader">Préloader</string>
 </resources>
