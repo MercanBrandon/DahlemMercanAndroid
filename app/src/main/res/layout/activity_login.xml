@@ -20,7 +20,8 @@
             app:layout_constraintHorizontal_bias="0.91"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0"
+            android:onClick="initPreferences"/>
 
     <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLayout"
